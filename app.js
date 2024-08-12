@@ -87,18 +87,18 @@ let margaritoSandwich = sandwichMaker("white", "rotierry chicken", "buffalo")
 //TODO Create Another Function: Create another function to determine the letter grade based on the average.
 //TODO Use if-else Statements: Use if-else statements inside the function to determine the letter grade.
 //* Output Results: Use console.log to display the average grade and the corresponding letter grade.
- 
+ /*
 grades_arr = ["A" , "B" , "C" , "D" , "E"]
 
-function AverageGradeCalc(grades){
+function AverageGradeCalc(grades_arr){
     let total = 0
     for (let i = 0; grades.length; i++) {
         total += grade[i];
     }
     return total / grades.length;
 }
- 
-//! Bank Account Manager
+ /*
+//! Bank Account Manager (2)
 //? Create a program that allows a user to manage a simple bank account, including depositing, withdrawing, and checking the balance.
  
 //TODO Define Variables: Start with a balance variable.
@@ -106,8 +106,27 @@ function AverageGradeCalc(grades){
 //TODO Use if-else Statements: Use if-else statements to ensure the withdrawal amount does not exceed the balance.
 //* Output Results: Use console.log to display the updated balance after each operation.
  
- 
-//! Simple To-Do List
+let balance = 0 
+
+function banking(depositing, withdrawing, balnance_checking)
+{
+    if()
+}
+
+/*
+function sandwichMaker(typeOfBread, typeOfMeat = "N/A", typeOfSauce, typeOfVeggie = "N/A")
+{ 
+    console.log(
+        `Bread: ${typeOfBread} Meat: ${typeOfMeat} Sauce: ${typeOfSauce} Veggies: ${typeOfVeggie}`
+                )
+}
+
+let zachSandwich =sandwichMaker("white", "ham" , "mayo" , "lettuce")
+let margaritoSandwich = sandwichMaker("white", "rotierry chicken", "buffalo")
+*/
+
+
+//! Simple To-Do List (3)
 //? Create a program that allows the user to add and display tasks in a to-do list.
  
 //TODO Define an Array: Define an array to store the tasks.
@@ -117,9 +136,19 @@ function AverageGradeCalc(grades){
  
 //! BONUS: Be able to remove a task o.o
  
- 
- 
-//! Temperature Converter
+simple_list = [ "wash clothes" , "cook dinner" , "feed dog" , "code"] 
+
+function to_do_list( task1 , task2 , task3, task4) 
+{
+    console.log(`TaskOne: ${task1} TaskTwo : ${task2} TaskThree : ${task3} TaskFour : ${task4}`)
+}
+
+let mylist = to_do_list(simple_list[0], simple_list[1] , simple_list[2], simple_list[3])
+
+
+
+
+//! Temperature Converter (4)
 //? Create a program that converts temperatures between Celsius, Fahrenheit, and Kelvin.
  
 //TODO Define Variables: Allow the user to input a temperature value and the unit they want to convert from.
@@ -139,8 +168,95 @@ function AverageGradeCalc(grades){
 //* celsiusToFahrenheit:
 //* (celsius * 9/5) + 32
  
- 
 //TODO  Use if-else Statements: Use if-else statements to determine which conversion to perform based on the user's input.
 //* Output Results: Use console.log to display the converted temperature.
  
- 
+/*
+function TempConvet ( celsius , Farenheit, kalvin)
+*/
+
+//INSTRUCTION 
+
+//! Grade Calculator 
+//? Create a program that calculates the average grade from an array of grades and determines teh corresponding letter grade.
+
+//TODO Define an Array : Define an array containing a list of 5 grades 
+let grades = [85, 34, 56, 87, 90];
+let gradeTwo = [82, 56, 31, 78, 61];
+
+//TODO Create a Function: Create a funtion to calulate the average of the grades.
+//? calulates the average grade from an array of grade
+
+function calcaverage (gradesArr){
+    let average = 0;
+    for (let i = 0; i < grades.length; i++) { 
+        average += gradeArr[i]
+
+    }
+    average += average / gradesArr.length;
+    console.log(average)
+}
+
+calcaverage(gradeTwo)
+
+
+//TODO Create Another Function : Create another funiton to determine the letter greade based on teh average. 
+
+function letterGrade(gradeNum) {
+    if (gradeNum > 100){
+        console.log(`$(gradeNum) can't exist and recieve no letter`)
+    } else if (gradeNum > 90) {
+        console.log(`$(gradeNum) has a A average!`)
+    } else if (gradeNum >= 80){
+        console.log(`$(grandNum) has a B average!`)
+    }else if (gradeNum >= 70){
+        console.log(`$(grandNum) has a C average!`)
+    } else if (gradeNum >= 60){
+        console.log(`$(grandNum) has a D average!`)
+    } else (gradeNum >= 50) ;{
+        console.log(`$(grandNum) has a F average!`)
+    }
+}
+
+
+
+//! Simple To-Do List 
+//? Create a program that allows the usewr to add and display tasks in a to-do list. 
+
+//TODO Define an Array: Deifine an array to store the tasks. 
+let taskToDo = [];
+//TODO Create Functions: Create functions to add a task and display the to-do list.
+
+function addATask(additionalTask){
+    //how do i add an item to the array?
+    taskToDo.push(additionalTask); 
+    console.log(taskToDo);
+}
+
+function displayToDoList(){
+    console.log(taskToDo);
+}
+
+function removeAnItem(taskCompleted) {
+    //I need to remove a specific item. 
+    //If else statement?
+    // if (taskCompleted == "Make bed"){
+    //    console.log("It's here!")
+    // }
+    let upperCaseTaskCompleted = taskCompleted.toUpperCase
+    console.log(upperCaseTaskCompleted)
+
+    for (let i = 0; i< taskToDo; i++) {
+        console.log(taskToDo[i]. toUpperCase());
+        if (upperCaseTaskCompleted == currentTaskItem) {
+            taskToDo.splice(i, 1);
+            console.log(taskToDo);
+        }
+    }
+}
+
+addATask("Make bed")
+addATask("Code some")
+addATask("Make food!")
+removeAnItem("make bed");
+removeAnItem("make food!")
