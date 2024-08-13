@@ -260,3 +260,53 @@ addATask("Code some")
 addATask("Make food!")
 removeAnItem("make bed");
 removeAnItem("make food!")
+
+
+//? Create a progam that converts tempatrues between Celsius, Fahrenheit, and Kkelvin. 
+//TODO Define Variables: Allow the user to input a temparture value and the unit they want to convet from. 
+
+let tempNum = 25;
+let tempUnitLetter = "C" ; 
+
+
+
+
+
+//QUIZ 8/13/2024
+
+//! Music Playlist Manager (1) 
+//? Create a program that alllows the user to manage a playlist of songs. 
+
+//TODO Define an Array: Define an array to store the song titles. 
+//TODO Create Functions: Create functions to add a song, remove a song, and display the playlist. 
+//TODO Use if - else statments and Loops: Use if - else statments and loops within the funcitons to handle the operatiosn. 
+//* Output Results: Use console.log to display the playlist after each operation. 
+
+let chill_jamz = []
+
+function sick_beats (WhatsNew, WhatsCut, WhatsPlaying) {
+    for ( let i = 0; i < chill_jamz.length; i++) {
+        if (chill_jamz == WhatsNew) {
+            console.log("Play that Sick Beat! " + "Up Next: " + WhatsNew )
+        } else if ( chill_jamz == WhatsCut) {
+            console.log("Ew. Who got the mic?" + "No Longer Playing : " + WhatsCut)
+        } else (chill_jamz == WhatsPlaying); {
+            console.log("Wait. Whats on now?" + "Now Playing : " + WhatsPlaying)
+        }
+    }
+}
+
+WhatsNew.push("Barbie World")
+WhatsCut.pop("The Song That Never Ends")
+WhatsPlaying ("I'm a Gummy Bear")
+
+
+
+//! Daily Tempatures (2)
+//? Create a program that processes daily tempature readings, calucaltes the average tempature, and identifyes the hihgest and lowerst tempatures. 
+//TODO Predefine an Array of Tempatures: Start with an array of numbers representing daily temperatrures. 
+let tempatures = [72 , 75 , 79 , 83 , 78 , 85 , 90] ; 
+//TODO Calculate the Average Tempature: Write a function to calculate the average of the tempatures. 
+//TODO Find the Highest Tempature: Write a function to find the highest tempature in the array 
+//TODO Find the Lowest Tempature: Write a function to find the lowest tempature in the array. 
+
