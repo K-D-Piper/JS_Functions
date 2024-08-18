@@ -310,3 +310,7 @@ let tempatures = [72 , 75 , 79 , 83 , 78 , 85 , 90] ;
 //TODO Find the Highest Tempature: Write a function to find the highest tempature in the array 
 //TODO Find the Lowest Tempature: Write a function to find the lowest tempature in the array. 
 
+
+
+//8/16/2024 Class Review 
+
